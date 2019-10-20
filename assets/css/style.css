@@ -50,6 +50,8 @@ body{
 .content{
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+/* about me picture */
 #bio{
     float: left;
     margin-right: 10px;
@@ -63,10 +65,34 @@ footer{
     text-align: center;
 }
 
+.btn-primary {
+    background-color:  #4aaaa5; 
+    border-color: #4aaaa5; 
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+    background-color:  #2f6b68; 
+    border-color: #4aaaa5
+}
+
+/* portfolio pictures */
+.img-holder {position: relative; display: inline-block; margin: 5px 10px 30px 10px}
+.img-holder img {display: block; width:200px;}
+.img-holder p {position: absolute; top: 85%; left: 0; right: 0; transform: translate(0, -50%); text-align: center;background-color: #4aaaa5; color: white; padding: 10px;}
+
+
+
+
+
+
+
+
+
+
 
 /* @media screen and (max-width: 980px) {
-#headbar.container{
-    margin-left: 20px;
+main{
+    width: 75%;
 }
 } */
 
@@ -82,6 +108,7 @@ h1{
 #headbar{
     margin-left:0px;
     margin-right:0px;
+    max-width: 100%;
 }
 #bio{
   width: 100%;
@@ -91,5 +118,15 @@ h1{
 main{
     margin-bottom: 10%
 }
-
+.img-holder {
+    margin: 0 auto;
+    width: 100%;
+}
+.img-holder img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.img-holder p{
+    padding: 20px;
+}
 }
