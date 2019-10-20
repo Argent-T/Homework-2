@@ -19,6 +19,9 @@
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color:#777777;
 }
+#headbar{
+    padding-left:0px;
+}
 
 /* Body */
 body{
@@ -50,12 +53,14 @@ body{
 #bio{
     float: left;
     margin-right: 10px;
+    width: 200px;
 }
 
 footer{
     border-top: 8px solid #4aaaa5; 
     background-color: #666666;
     color: white;
+    text-align: center;
 }
 
 
@@ -78,7 +83,9 @@ h1{
     margin-left:0px;
     margin-right:0px;
 }
-.container{
-    
+#bio{
+  width: 100%;
+  margin-bottom: 15px;
+
 }
 }
