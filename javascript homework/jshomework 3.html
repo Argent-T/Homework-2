@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>js homework</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        // workshopping
+
+        // var special = confirm("Do you want special characters?")
+        // var numeric = confirm("Do you want numeric characters?")
+        // var lowercase = confirm("Do you want lowercase characters?")
+        // var uppercase = confirm("Do you want uppercase characters?")
+        var randomcycle = [genLetter, genNumber, genSpecial]
+
+
+
+
+
+        var letters = "abcdefghijklmnopqrstuvwxyz ";
+        var numbers = "0123456789 ";
+        var specChar = [" ", "!", '\u0022', "#", "%", "&", '\u0027', "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\u005C", "]", "^", "_", "`", "{", "|", "}", "~", ""];
+        var passwordLength
+
+        // Number of characters
+        function passLength() {
+            var pwdLength = parseInt(prompt("How many characters would you like your password to have? (8-128)"));
+            if (pwdLength > 7 && pwdLength < 129) {
+                alert("Your number (" + pwdLength + ") matches requirements");
+                passwordLength = pwdLength;
+            }
+            else if (isNaN(pwdLength)) {
+                alert("It is not a number. Please enter a number from 8 to 128");
+                passLength()
+            }
+            else {
+                alert("Your number (" + pwdLength + ") is not a valid number. Please enter a number from 8 to 128");
+                passLength()
+            }
+        }
+
+
+        // CHARACTER PICKERS
+        function genLetter() {
+            var n = letters.length,
+                letter = "";
+            letter = letters.charAt(Math.floor(Math.random() * n));
+            return letter;
+        }
+
+        function genNumber() {
+            var n = numbers.length,
+                number = "";
+            number = numbers.charAt(Math.floor(Math.random() * n));
+            return number;
+        }
+
+        function genSpecial() {
+            var n = specChar.length,
+                character = "";
+            character = specChar[(Math.floor(Math.random() * n))];
+            return character;
+        }
+
+
+
+        alert("password is " + password)
+
+       
+            passLength()
+        console.log(passwordLength);
+
+        if (uppercase == true) {
+
+        }
+
+
+
+
+// workshopping
+
+
+
+// function generatePassword() {
+//     var length = 8,
+//         charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+//         retVal = "";
+//     for (var i = 0, n = charset.length; i < length; ++i) {
+//         retVal += charset.charAt(Math.floor(Math.random() * n));
+//     }
+//     return retVal;
+// }
+
+
+
+
+
+// var specChar = ['\u0021','\u0022','\u0023','\u0024','\u0025','\u0026','\u0027','\u0028','\u0029','\u002A','\u002B','\u002C','\u002D','\u002E','\u002F','\u003A','\u003B' ]
+
+    </script>
+
+
+
+</body>
+
+</html>
